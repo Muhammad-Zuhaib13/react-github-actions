@@ -1,0 +1,17 @@
+name: First Workflow for React
+on: push
+jobs:
+  first-workflow-react:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+      with:
+        node-version: 24
+        cache: npm 
+
+    - name: install dependencies
+      run: npm ci
+
+    - name: make react build
+      run: npm run build
