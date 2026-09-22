@@ -2,10 +2,10 @@ name: First Workflow for React
 on: 
   push:
   pull_request:
-  branches:
-    - main
-    - dev
-    - qa
+    branches:
+      - main
+      - dev
+      - qa
 jobs:
   first-workflow-react:
     runs-on: ubuntu-latest
